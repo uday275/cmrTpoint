@@ -1,0 +1,125 @@
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .menu-bar {
+        /* Adjust the height and padding for better mobile experience */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgb(0, 0, 255);
+        text-align: center;
+        overflow-x: scroll;
+        white-space: nowrap;
+        line-height: 10px;
+        z-index: 1000;
+    }
+
+    .menu-bar ul {
+        /* Stack menu items vertically */
+        flex-direction: row;
+    }
+
+    .menu-bar ul li {
+        /* Center-align menu items */
+        text-align: justify;
+    }
+
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
+        /* or any other suitable display property for mobile */
+    }
+
+
+    .active,
+    .menu-bar ul li:hover {
+        /* Keep the same background color for active and hovered items */
+        background: #030404;
+        border-radius: 50%;
+    }
+
+    .active {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        /* Hide the traditional horizontal menu on smaller screens */
+        flex-direction: column;
+    }
+
+
+
+
+
+
+    h2,
+    h3,
+    h4 {
+        font-size: 12px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        padding-left: 15px;
+    }
+
+    .c1 {
+        font-size: 20px;
+        margin-top: 50px;
+        line-height: 1.8em;
+        display: block;
+        color: #df1077;
+
+
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+
+        width: 100%;
+        padding-left: 2%;
+        padding-top: 5%;
+        padding-right: 2%;
+        background-color: #f5f8f8;
+    }
+
+    .extra {
+        display: none;
+    }
+
+
+    h1 {
+        margin-top: 35px;
+    }
+
+
+    button {
+        padding: 10px 15px;
+    }
+
+    .col-3 {
+        width: 100%;
+        float: none;
+    }
+
+    .onlycontentad {
+        display: none;
+    }
+
+    .table th,
+    .table td {
+        padding: 6px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
